@@ -150,10 +150,12 @@
 
         <div class="centuries__bground" itemscope itemtype="http://schema.org/VideoObject">
             <section class="сenturies wrapper">
-                <iframe width="100%" src="https://www.youtube.com/embed/edm4V2Tg8fE?si=Sm3-gpBV2Wxnol8E"
+                <iframe width="100%" 
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen class="centuries__video" itemprop="contentUrl">
+                    allowfullscreen class="centuries__video" itemprop="contentUrl"
+                    id="iframe"
+                    >
                 </iframe>
                 <h2 class="centuries__heading" itemprop="name">Bringing Centuries of Cast Iron Mastery</h2>
                 <p class="centuries__paragraph centuries__paragaph1 paragraph" itemprop="description">With roots dating
@@ -522,7 +524,8 @@
         </div>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="index.js" async></script>
+    <script src="iframeLoader.js" async></script>
 </body>
 
 </html>

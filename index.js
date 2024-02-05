@@ -1,7 +1,5 @@
 const input = document.querySelector('#form_email_input')
 const btn = document.querySelector('#form_email_btn')
-
-console.log(input.value)
 const message1 = document.querySelector('#message1')
 const message2 = document.querySelector('#message2')
 
