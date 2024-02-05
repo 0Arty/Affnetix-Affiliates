@@ -689,6 +689,13 @@ a {
     margin-right: 15px;
     width: 140px;
     height: 60px;
+    color: white;
+    font-family: var(--noto-font);
+font-size: 15px;
+font-weight: 500;
+line-height: 25px;
+letter-spacing: 0%;
+text-align: center;
 }
 
 .form__input[type=text] {
