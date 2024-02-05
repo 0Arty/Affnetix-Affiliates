@@ -35,6 +35,10 @@ a {
 /* ______________________________________________ */
 /* components */
 
+body {
+    min-height: 10000px;
+}
+
 .btn {
     background-color: #418043;
     border: none;
@@ -51,8 +55,19 @@ a {
 }
 
 /* ______________________________________________ */
+/* modifiers */
+.wrapper {
+    width: var(--wrapper-width);
+    margin: 0 auto;
+}
 
+.paragraph {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
 
+/* ______________________________________________ */
 .header {
     margin: 0 auto;
     width: var(--wrapper-width);
@@ -66,27 +81,24 @@ a {
     width: 144px;
 }
 
-.wrapper {
-    width: var(--wrapper-width);
-    margin: 0 auto;
-}
+
 
 .main {
     width: 100%;
 }
 
-.promo-block {
+.promo {
     width: 100%;
     position: relative;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.promo-block__content {
+.promo__content {
     width: 570px;
     padding: 300px 0;
 }
 
-.promo-block__title {
+.promo__title {
     font-family: var(--staatli-font);
     font-weight: 400;
     font-size: 90px;
@@ -95,7 +107,7 @@ a {
     color: #ffffff;
 }
 
-.promo-block__paragraph {
+.promo__paragraph {
     margin-top: 30px;
     font-family: var(--noto-font);
     font-size: 16px;
@@ -106,7 +118,7 @@ a {
     color: whitesmoke;
 }
 
-.promo-block__button {
+.promo__btn {
     width: 245px;
     height: 70px;
     font-size: 23px;
@@ -115,7 +127,7 @@ a {
     margin-top: 45px;
 }
 
-.promo-block__button_link {
+.promo__btn__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,7 +135,7 @@ a {
 }
 
 
-.promo-block__image-block {
+.promo__image-block {
     position: absolute;
     top: 0;
     z-index: -1;
@@ -132,7 +144,7 @@ a {
 
 }
 
-.promo-block__image {
+.promo__image {
     width: 100%;
     object-fit: cover;
     height: 100%;
@@ -158,13 +170,15 @@ a {
 .advantage__item:nth-child(2) {
     background-color: #0C0D0C;
 }
-.advantage__image__container{
+
+.advantage__image__container {
     height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
+
 .advantage__image {
     margin: 0 auto;
 }
@@ -191,6 +205,260 @@ a {
     letter-spacing: 0%;
 }
 
+.proposal {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.proposal__header {
+    color: #0c0d0c;
+    font-family: var(--staatli-font);
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 67.5px;
+}
+
+.proposal__paragraph {
+    width: 800px;
+    margin: 20px auto 0;
+    color: rgb(10, 33, 23);
+    font-family: var(--noto-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26.4px;
+    letter-spacing: 0%;
+
+}
+
+.proposal__container {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    min-height: 100px;
+
+}
+
+.proposal__item {
+    width: calc((100% / 3));
+    background-color: #F2F7F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 65px;
+    position: relative;
+}
+
+.proposal__item__image {
+    width: 260px;
+    object-fit: cover;
+    position: absolute;
+    top: 60px;
+}
+
+.proposal__item__name {
+    margin-top: 260px;
+    text-transform: uppercase;
+    color: rgb(12, 13, 12);
+    font-family: var(--staatli-font);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+    min-height: 83px;
+
+}
+
+.proposal__item__description {
+    color: rgb(30, 30, 30);
+    font-family: var(--noto-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 35px;
+}
+
+.proposal-item__btn {
+    width: 170px;
+    height: 60px;
+    margin: 0 auto;
+    bottom: 35px;
+    margin-top: auto;
+}
+
+
+.centuries__bground {
+    background-color: #000000;
+
+}
+
+.сenturies {
+    margin-top: 100px;
+    padding: 100px 0;
+}
+
+.centuries__video {
+    aspect-ratio: 16/9;
+    background-image: url('https://thestaub.com/wp-content/uploads/2023/12/staub-re.jpg');
+}
+
+.centuries__header {
+    margin-top: 55px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 68px;
+    letter-spacing: 0%;
+    font-family: var(--staatli-font);
+}
+
+.centuries__paragraph {
+    color: #ffffff;
+    font-family: var(--noto-font);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+
+}
+
+.centuries__paragaph1 {
+    margin-top: 25px;
+}
+
+.centuries__paragaph2 {
+    margin-top: 55px;
+}
+
+.ocassion {
+    margin-top: 50px;
+}
+
+.ocassion__header {
+    text-align: center;
+    color: #0c0d0c;
+    font-family: var(--staatli-font);
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 67.5px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.ocassion__paragraph {
+    margin-top: 15px;
+    color: #0a2117;
+    font-family: var(--noto-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26.4px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.ocassion__container {
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+
+.ocassion__card {
+    width: 100%;
+    height: 630px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: .3s ease;
+}
+
+.ocassion__card:hover {
+    background: rgba(0, 0, 0, .35);
+    transition: .5s ease;
+}
+
+.ocassion__card__bground {
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.ocassion__card__content {
+    width: calc(100% - 60px);
+    background: #FFFFFF;
+    min-height: 300px;
+    margin-top: auto;
+    margin-bottom: 30px;
+    padding: 50px;
+}
+
+.ocassion__card__header {
+    text-align: center;
+    color: #0c0d0c;
+    font-family: var(--staatli-font);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+    text-align: center;
+}
+
+.ocassion__card__paragraph {
+    margin-top: 5px;
+    text-align: center;
+    color: #1e1e1e;
+    font-family: var(--noto-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26.4px;
+    text-align: center;
+}
+
+.clients {
+    margin-top: 100px;
+
+}
+
+.clients_heading {
+    text-align: center;
+    text-transform: uppercase;
+    color: #0c0d0c;
+    font-family: var(--staatli-font);
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 68px;
+
+}
+
+.clients_paragraph {
+    margin-top: 25px;
+    color: #0a2117;
+font-family: var(--noto-font);
+font-size: 16px;
+font-weight: 400;
+line-height: 26.4px;
+}
+.clients__client{
+    padding: 60px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 1340px) {
@@ -202,39 +470,89 @@ a {
         padding: 25px;
     }
 }
-@media screen and (max-width: 900px){
-    .advantage__item{
+
+@media screen and (max-width: 1020px) {
+    .proposal__item {
+        padding: 25px;
+    }
+
+    .proposal__item__image {
+        position: inherit;
+        top: 0;
+        width: 100%;
+    }
+
+    .proposal__item__name {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .advantage__item {
         padding: 40px 25px;
     }
 }
 
+@media screen and (max-width: 850px) {
+
+    .paragraph {
+        width: 100%;
+    }
+
+    .proposal__container {
+        gap: 15px;
+    }
+
+}
 
 @media screen and (max-width: 767px) {
-    .promo-block__content {
+    .promo__content {
         width: 100%;
         align-items: center;
         text-align: center;
     }
 
-    .promo-block__title {
+    .promo__title {
         text-align: center;
         font-size: 60px;
     }
 
-    .promo-block__paragraph {
+    .promo__paragraph {
         text-align: center;
     }
-    .advantages__container{
+
+    .advantages__container {
         flex-direction: column;
     }
-    .advantage__item{
+
+    .advantage__item {
         width: 100%;
     }
-    .advantage__image__container{
+
+    .advantage__image__container {
         height: 60px;
     }
-    .advantage__image{
+
+    .advantage__image {
         width: 60px;
     }
-}
 
+    .proposal__container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .proposal__item {
+        width: 340px;
+    }
+
+    .ocassion__container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr, 4);
+    }
+
+    .ocassion__card__content {
+        min-height: 220px;
+    }
+}
