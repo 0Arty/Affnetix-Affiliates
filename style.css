@@ -210,7 +210,7 @@ body {
     text-align: center;
 }
 
-.proposal__header {
+.proposal__heading {
     color: #0c0d0c;
     font-family: var(--staatli-font);
     font-size: 45px;
@@ -301,7 +301,7 @@ body {
     background-image: url('https://thestaub.com/wp-content/uploads/2023/12/staub-re.jpg');
 }
 
-.centuries__header {
+.centuries__heading {
     margin-top: 55px;
     color: white;
     text-transform: uppercase;
@@ -338,7 +338,7 @@ body {
     margin-top: 50px;
 }
 
-.ocassion__header {
+.ocassion__heading {
     text-align: center;
     color: #0c0d0c;
     font-family: var(--staatli-font);
@@ -401,7 +401,7 @@ body {
     padding: 50px;
 }
 
-.ocassion__card__header {
+.ocassion__card__heading {
     text-align: center;
     color: #0c0d0c;
     font-family: var(--staatli-font);
@@ -441,13 +441,156 @@ body {
 .clients_paragraph {
     margin-top: 25px;
     color: #0a2117;
-font-family: var(--noto-font);
-font-size: 16px;
-font-weight: 400;
-line-height: 26.4px;
+    font-family: var(--noto-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26.4px;
 }
-.clients__client{
+
+.client__container {
+    display: flex;
+    gap: 30px;
+}
+
+.clients__client-card {
     padding: 60px;
+    width: calc(100% / 3);
+    background-color: #F2F7F6;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.clients__card__avatar {
+    margin: 0 auto;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.clients__card__quotes {
+    position: absolute;
+    right: 45px;
+    top: 45px;
+}
+
+.clients__card__heading {
+    margin-top: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0c0d0c;
+    font-family: var(--staatli-font);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+
+}
+
+.clients__card__paragraph {
+    margin-top: 30px;
+    width: 100%;
+    text-align: justify;
+    color: #1e1e1e;
+    font-family: var(--noto-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.clients__card__paragraph>p2 {
+    margin-top: 20px;
+    padding-bottom: 25px;
+}
+
+.clients__card__ps {
+    text-align: center;
+    margin-top: auto;
+    padding-top: 25px;
+    text-transform: uppercase;
+    color: #0c0d0c;
+    font-family: var(--staatli-font);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.clients__card__customer {
+    margin-top: 5px;
+    color: #1e1e1e;
+    font-family: var(--noto-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+}
+
+.banner__content {
+    margin-top: 50px;
+    position: relative;
+    min-height: 480px;
+    background-color: rgba(0, 0, 0, .5);
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__heading {
+    text-align: center;
+    padding-top: 100px;
+    color: #ffffff;
+    font-family: var(--staatli-font);
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 67.5px;
+}
+
+.banner__paragraph {
+    margin-top: 25px;
+    color: #ffffff;
+    font-family: var(--noto-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.banner__image {
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+.banner__form__container {
+    margin: 0 auto;
+    width: 550px;
+    height: 90px;
+    margin-top: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+
+}
+.banner__form{
+    margin: 0 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner__input{
+    width: calc(100% - 150px - 20px - 30px);
+    height: 60px;
+}
+.banner__btn{
+    width: 150px;
+    height: 60px;
+    color: white;
 }
 
 
@@ -455,6 +598,34 @@ line-height: 26.4px;
 
 
 
+
+@media screen and (max-width: 1024px) {
+    .clients__card__avatar {
+        width: 80px;
+        border-radius: 80px;
+    }
+
+    .clients__card__quotes {
+        right: 25px;
+        top: 25px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .client__container {
+        flex-direction: column;
+
+    }
+
+    .clients__client-card {
+        width: 100%;
+    }
+
+    .clients__card__avatar {
+        width: 160px;
+        border-radius: 160px;
+    }
+}
 
 
 
